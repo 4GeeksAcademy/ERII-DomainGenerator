@@ -34,3 +34,18 @@ window.onload = function() {
 
   generateButton.addEventListener("click", onGenerateButtonClick);
 };
+
+let pronoun = ["the", "our", "a"];
+let adj = ["great", "big", "beautiful", "creepy", "nasty"];
+let noun = ["jogger", "raccoon", "car", "pizza", "burger", "thief"];
+let dom = [".com", ".org", ".es", ".net", ".xyz"];
+
+for (let p = 0; p < pronoun.length; p++) {
+  for (let a = 0; a < adj.length; a++) {
+    for (let n = 0; n < noun.length; n++) {
+      for (let d = 0; d < dom.length; d++) {
+        console.log(`${pronoun[p]}${adj[a]}${noun[n]}${dom[d]}`);
+      }
+    }
+  }
+}
